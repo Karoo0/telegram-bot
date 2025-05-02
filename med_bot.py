@@ -1,6 +1,7 @@
 import telebot
 
-TOKEN = '7992592517:AAFZDbIbxeKGQAWueLdlf1Evh1U2Yrza-q0'
+import os
+TOKEN = os.getenv('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 # Словари с эмодзи для факультетов
